@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import FeaturesGrid from './components/FeaturesGrid.jsx';
+import Landing from './components/Landing.jsx';
+import AuthPortal from './components/AuthPortal.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
@@ -33,9 +33,8 @@ function App() {
     <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-inter">
       <Header theme={theme} onToggleTheme={toggleTheme} />
       <main>
-        <Hero />
-        <FeaturesGrid />
-        {/* Policy & About preview sections */}
+        <Landing />
+        <AuthPortal />
         <section id="policy" className="py-12 border-t border-gray-200 dark:border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className="text-2xl font-bold">Policy</h3>
